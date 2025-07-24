@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta de Piscina</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body class="piscina">
+
+  <header>
+  <div id="logo">
+    <a href="index.html">
+      <img src="icono.png" alt="Icono menú" class="icono-menu" />
+      Menú
+    </a>
+  </div>
+    <nav id="menu">
+      <button class="nav-mobile" id="nav-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cena.html">Carta de cena</a></li>
+        <li><a href="piscina.html">Carta de piscina</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <h1>Carta de Piscina</h1>
+
+    <div class="secciones">
+      <a href="comidas.html" class="boton-carta">Comidas</a>
+      <a href="bebidas.html" class="boton-carta">Bebidas</a>
+      <a href="postres.html" class="boton-carta">Postres</a>
+      <a href="cocteles.html" class="boton-carta">Cocktails</a>
+    </div>
+  </main>
+
+  <footer class="footer-horario">
+    <p>Horario de atención: De 13:00 a 16:30</p>
+    <p>Todas las consumiciones serán cargadas a la habitación.</p>
+    <p>Prohibido consumir en la piscina, solo en el área establecida por el Hotel.</p>
+    <p>El coste de los platos en área de piscina tendrá un suplemento de 2€ debido al servicio de recogida y material de uso único.</p>
+    <a href="index.html" style="color:#c9a84e; text-decoration:none; font-size:0.9em;">Volver al inicio</a>
+  </footer>
+
+
+  <script>
+    document.getElementById('nav-mobile').addEventListener('click', function() {
+      document.querySelector('.nav-menu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
